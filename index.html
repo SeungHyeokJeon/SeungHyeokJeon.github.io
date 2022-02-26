@@ -41,11 +41,7 @@
 </head>
 <body>
   <div class="navbar">    
-    <div class="logo">
-      <a href="/">
-        <img src="/images/logo.png" height="34px" />
-      </a>
-    </div>
+    
     <div class="burger">
       <button onclick="toggle_visibility('menu')">
         <i class="fa fa-bars" aria-hidden="true"></i> Menu
@@ -53,10 +49,10 @@
     </div>
     <div id="menu" class="menu hidden">
       <ul>
-        <li><a href="/">#블로그제목</a></li>
-        <li><a href="/categories">#Categories</a></li>
-        <li><a href="/tags">#Tags</a></li>
-        <li><a href="/projects">#Projects</a></li>        
+        <li><a href="/">블로그제목</a></li>
+        <li><a href="/categories">Categories</a></li>
+        <li><a href="/tags">Tags</a></li>
+        
       </ul>
       <input class="search" id="search-input" type="search" placeholder="Keyword" value="">
     </div>
@@ -64,11 +60,36 @@
   <div class="container">    
 
 
+  <div class="post">
+  <div class="post-title">
+    <a href="https://SeungHyeokJeon.github.io/posts/buzzing/first-post/" title="post sample">
+      <img src="/images/post-title-icon.png" />
+      <div class="post-meta">
+        <time>2022년 02월 26일</time>
+        <h1>post sample</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="cover-image">
+    <a href="https://SeungHyeokJeon.github.io/posts/buzzing/first-post/" title="post sample">
+      <img src="https://blog.lulab.net/images/projects/2019-05-hugo-hello-programmer-theme-v2_projects.png" />
+    </a>
+  </div>
+  
+  <div>
+    포스트 샘플 포스트 샘플 샘플 샘플
+    
+  </div>
+</div>
+
+  <hr class="summary-sep" />
+
 
 <div class="paging">
   
   <span class="page">
-    Page 1 / 0
+    페이지 1 / 1
   </span>
   
 </div>
@@ -81,8 +102,7 @@
   </a>
 </div>
 <footer class="footer">
-  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG (LUBANG).</a><br />
-  ALL RIGHTS RESERVED.
+  COPYRIGHT (C) <a href="https://seunghyeokjeon.github.io/">SeungHyeok Jeon.</a> ALL RIGHTS RESERVED.
 </footer>
 </body>
 </html>
