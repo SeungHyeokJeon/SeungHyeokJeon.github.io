@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>project on 블로그제목</title>
+    <title>project on 여기는 블로그입니다.</title>
     <link>https://SeungHyeokJeon.github.io/tags/project/</link>
-    <description>Recent content in project on 블로그제목</description>
+    <description>Recent content in project on 여기는 블로그입니다.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <managingEditor>이메일 (이름)</managingEditor>
-    <webMaster>이메일 (이름)</webMaster>
-    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://SeungHyeokJeon.github.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>sdkazx2717@gmail.com (SeungHyeok Jeon)</managingEditor>
+    <webMaster>sdkazx2717@gmail.com (SeungHyeok Jeon)</webMaster>
+    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://SeungHyeokJeon.github.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>post sample</title>
-      <link>https://SeungHyeokJeon.github.io/posts/buzzing/first-post/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
-      <author>이메일 (이름)</author>
-      <guid>https://SeungHyeokJeon.github.io/posts/buzzing/first-post/</guid>
-      <description>포스트 샘플 포스트 샘플 샘플 샘플</description>
+      <title>Hugo Blog 구축</title>
+      <link>https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B5%AC%EC%B6%95/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      <author>sdkazx2717@gmail.com (SeungHyeok Jeon)</author>
+      <guid>https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B5%AC%EC%B6%95/</guid>
+      <description>Hugo 설치  글에 들어가기 앞서, 해당 설치환경은 윈도우 11 기준으로 작성되었음을 알립니다.
+ 세팅 전 필수 프로그램 설치 Git
+Downloads
+해당 사이트에서 Git과 Go를 다운받습니다.
+Chocolatey를 사용하는 경우, 아래 코드를 입력하여 Go와 Git을 설치할 수 있습니다.
+PS ../&amp;gt; choco install git golang Github 저장소 생성 Hugo는 Github Repository를 2개 생성해야합니다.
+Repository Name은 github닉네임.github.io와 blog 로 생성합니다.
+주의해야할 점은 Repository 생성 시 README.md를 만들지 말아야합니다. 나중에 충돌이 발생할 수 있습니다.</description>
     </item>
     
   </channel>
