@@ -10,14 +10,14 @@
     <webMaster>sdkazx2717@gmail.com (SeungHyeok Jeon)</webMaster>
     <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://SeungHyeokJeon.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Blog 구축</title>
+      <title>Hugo Blog 구축 - 수정중</title>
       <link>https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B5%AC%EC%B6%95/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
       <author>sdkazx2717@gmail.com (SeungHyeok Jeon)</author>
       <guid>https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B5%AC%EC%B6%95/</guid>
       <description>Hugo 설치  글에 들어가기 앞서, 해당 설치환경은 윈도우 11 기준으로 작성되었음을 알립니다.
  세팅 전 필수 프로그램 설치 Git
-Downloads
+Go
 해당 사이트에서 Git과 Go를 다운받습니다.
 Chocolatey를 사용하는 경우, 아래 코드를 입력하여 Go와 Git을 설치할 수 있습니다.
 PS ../&amp;gt; choco install git golang Github 저장소 생성 Hugo는 Github Repository를 2개 생성해야합니다.
