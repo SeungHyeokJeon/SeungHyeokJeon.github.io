@@ -76,7 +76,7 @@ img {
     outline: none;
   }
   .navbar > .burger button:hover {
-    background-color: #00ccaa;
+    background-color: #8aad8a;
   }
   .navbar > .menu {
     position: relative;
@@ -389,7 +389,7 @@ img {
   text-decoration: none;
 }
 .go-top-button:hover {
-  background-color: #00ccaa;
+  background-color: #8aad8a;
 }
 .go-top-button i {
   margin-top: -0.1em;

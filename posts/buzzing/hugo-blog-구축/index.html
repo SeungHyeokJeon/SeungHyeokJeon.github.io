@@ -3,14 +3,14 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hugo Blog 구축 - 수정중  | 여기는 블로그입니다.</title>
-  <meta name="description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 구축 - 수정중'을 한 번 살펴보세요.">
-  <meta property="og:title" content="Hugo Blog 구축 - 수정중">
+  <title>Hugo Blog 구축  | 여기는 블로그입니다.</title>
+  <meta name="description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 구축'을 한 번 살펴보세요.">
+  <meta property="og:title" content="Hugo Blog 구축">
   
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2022-03-01">
   
-  <meta property="og:description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 구축 - 수정중'을 한 번 살펴보세요.">
+  <meta property="og:description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 구축'을 한 번 살펴보세요.">
   <meta property="og:url" content="https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B5%AC%EC%B6%95/">
   <meta property="og:site_name" content="여기는 블로그입니다.">
   
@@ -72,7 +72,7 @@
       
       <div class="post-meta">
         <time>2022년 03월 01일</time>
-        <h1>Hugo Blog 구축 - 수정중</h1>
+        <h1>Hugo Blog 구축</h1>
       </div>
     </a>
   </div>
@@ -80,10 +80,9 @@
     <span class="title">차례</span>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#hugo-설치">Hugo 설치</a></li>
-    <li><a href="#세팅-전-필수-프로그램-설치">세팅 전 필수 프로그램 설치</a></li>
+    <li><a href="#구축-전-필수-프로그램-설치">구축 전 필수 프로그램 설치</a></li>
     <li><a href="#github-저장소-생성">Github 저장소 생성</a></li>
-    <li><a href="#hugo-설치-1">Hugo 설치</a></li>
+    <li><a href="#hugo-설치">Hugo 설치</a></li>
     <li><a href="#hugo-블로그-생성">Hugo 블로그 생성</a></li>
     <li><a href="#hugo-테마-설정">Hugo 테마 설정</a></li>
     <li><a href="#git-repository-연결-및-배포-스크립트-작성">Git Repository 연결 및 배포 스크립트 작성</a></li>
@@ -92,11 +91,10 @@
 </nav>
   </div>
   <section class="post-content">
-    <h2 id="hugo-설치">Hugo 설치</h2>
-<blockquote>
-<p>글에 들어가기 앞서, 해당 설치환경은 윈도우 11 기준으로 작성되었음을 알립니다.</p>
+    <blockquote>
+<p>글에 들어가기 앞서, 해당 설치환경은 윈도우 10, 11 기준으로 작성되었음을 알립니다.</p>
 </blockquote>
-<h2 id="세팅-전-필수-프로그램-설치">세팅 전 필수 프로그램 설치</h2>
+<h2 id="구축-전-필수-프로그램-설치">구축 전 필수 프로그램 설치</h2>
 <p><a href="https://git-scm.com/">Git</a></p>
 <p><a href="https://go.dev/dl/">Go</a></p>
 <p>해당 사이트에서 Git과 Go를 다운받습니다.</p>
@@ -110,7 +108,7 @@
 <p><img src="/images/buzzing/20220301_HugoBlog%EA%B5%AC%EC%B6%95/github_02.png" alt="github_02"></p>
 <p>생성되었다면 <code>git clone</code>을 통해 컴퓨터에 만든 저장소를 복제합니다.</p>
 <pre tabindex="0"><code>PS ../&gt; git clone https://github.com/nickname/blog.git
-</code></pre><h2 id="hugo-설치-1">Hugo 설치</h2>
+</code></pre><h2 id="hugo-설치">Hugo 설치</h2>
 <p><a href="https://github.com/gohugoio/hugo/releases">Releases · gohugoio/hugo</a></p>
 <p>해당 사이트에서 Hugo를 다운받습니다.</p>
 <p>Chocolatey를 사용하는 경우, 아래 코드를 입력하여 Hugo를 설치할 수 있습니다.</p>
@@ -128,21 +126,21 @@
 <pre tabindex="0"><code>PS ../blog/blog&gt; cd themes
 PS ../blog/blog/themes&gt; git clone https://github.com/lubang/hugo-hello-programmer-theme
 </code></pre><p>그런다음 상위 폴더의 <code>config.toml</code>파일을 수정합니다.</p>
-<pre tabindex="0"><code>baseURL = &quot;https://SeungHyeokJeon.github.io/&quot; # 해당 블로그 주소를 입력합니다
-title = &quot;블로그제목&quot;
+<pre tabindex="0"><code>baseURL = &#34;https://SeungHyeokJeon.github.io/&#34; # 해당 블로그 주소를 입력합니다
+title = &#34;블로그제목&#34;
 
-languageCode = &quot;kr-ko&quot;
-theme = &quot;hugo-hello-programmer-theme&quot;
-disqusShortname = &quot;개별설정&quot;
-googleAnalytics = &quot;개별설정&quot;
+languageCode = &#34;kr-ko&#34;
+theme = &#34;hugo-hello-programmer-theme&#34;
+disqusShortname = &#34;개별설정&#34;
+googleAnalytics = &#34;개별설정&#34;
 paginate = 7
 
 [author]
-    name = &quot;이름&quot;
-    email = &quot;이메일&quot;
+    name = &#34;이름&#34;
+    email = &#34;이메일&#34;
 
 [params]
-    description = &quot;블로그 설명&quot;
+    description = &#34;블로그 설명&#34;
 </code></pre><p>설정을 다했다면 로컬서버를 실행시켜 제대로 적용됐는지 확인해봅니다.</p>
 <pre tabindex="0"><code>PS ../blog/blog&gt; hugo server
 </code></pre><p>https://localhost:1313 또는 https://127.0.0.1:1313 으로 접속할 수 있습니다.</p>
@@ -183,18 +181,20 @@ echo %msg%
 @REM Submodule commit
 cd public
 git add .
-git commit -m &quot;%msg%&quot;
+git commit -m &#34;%msg%&#34;
 git push origin main
 
 @REM Main blog commit
 cd ../..
 git add .
-git commit -m &quot;%msg%&quot;
+git commit -m &#34;%msg%&#34;
 git push origin main
 </code></pre><p>파일을 저장하고 아래처럼 파일을 실행시켜 git push를 진행합니다.</p>
 <p>커밋내용은 작성하지 않으면 <code>rebuilding site 날짜 시간</code> 형식으로 작성됩니다.</p>
 <pre tabindex="0"><code>PS ../blog&gt; ./deploy.bat (커밋내용)
-</code></pre><h2 id="reference">Reference</h2>
+</code></pre><p>배포를 완료했다면 블로그로 들어가 정상적으로 build 되었는지 확인해봅니다.</p>
+<p><code>https://nickname.github.io</code></p>
+<h2 id="reference">Reference</h2>
 <p><a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
 <p><a href="https://velog.io/@mellonggo/Github-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-Hugo">https://velog.io/@mellonggo/Github-페이지-블로그-만들기-with-Hugo</a></p>
 <p><a href="https://gurumee92.github.io/2020/08/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-1-hugo-github%EC%9C%BC%EB%A1%9C-%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/">https://gurumee92.github.io/2020/08/블로그-구축기-1-hugo-github으로-개인-블로그-만들기/</a></p>
@@ -202,17 +202,17 @@ git push origin main
   </section>
   <div class="share">    
     <a
-      href="//www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&t=Hugo%20Blog%20%ea%b5%ac%ec%b6%95%20-%20%ec%88%98%ec%a0%95%ec%a4%91"
+      href="//www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&t=Hugo%20Blog%20%ea%b5%ac%ec%b6%95"
       onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
       ><i class="fa fa-facebook"></i
     ></a>
     <a
-      href="//twitter.com/intent/tweet?url=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&text=Hugo%20Blog%20%ea%b5%ac%ec%b6%95%20-%20%ec%88%98%ec%a0%95%ec%a4%91&tw_p=tweetbutton"
+      href="//twitter.com/intent/tweet?url=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&text=Hugo%20Blog%20%ea%b5%ac%ec%b6%95&tw_p=tweetbutton"
       onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
       ><i class="fa fa-twitter"></i
     ></a>
     <a
-      href="//getpocket.com/edit?url=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&title=Hugo%20Blog%20%ea%b5%ac%ec%b6%95%20-%20%ec%88%98%ec%a0%95%ec%a4%91"
+      href="//getpocket.com/edit?url=https%3a%2f%2fSeungHyeokJeon.github.io%2fposts%2fbuzzing%2fhugo-blog-%25EA%25B5%25AC%25EC%25B6%2595%2f&title=Hugo%20Blog%20%ea%b5%ac%ec%b6%95"
       onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"
       ><i class="fa fa-get-pocket"></i
     ></a>
