@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Blog 글 작성하기  | 여기는 블로그입니다.</title>
+  <meta name="description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 글 작성하기'을 한 번 살펴보세요.">
+  <meta property="og:title" content="Hugo Blog 글 작성하기">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-03-13">
+  
+  <meta property="og:description" content="개발 공부 관련 포스트를 업로드하는 블로그입니다. 'Hugo Blog 글 작성하기'을 한 번 살펴보세요.">
+  <meta property="og:url" content="https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B8%80-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/">
+  <meta property="og:site_name" content="여기는 블로그입니다.">
+  
+  <meta property="og:image" content="https://SeungHyeokJeon.github.io/images/thumbnail.png">
+  
+  
+  <meta property="og:tags" content="project">
+  
+  <meta property="og:tags" content="blog">
+  
+  <meta property="og:tags" content="hugo">
+  
+  <meta property="og:tags" content="github">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B8%80-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  
+  <script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.className === 'menu')
+      e.className = 'menu hidden';
+    else
+      e.className = 'menu';
+  }
+  </script>
+</head>
+<body>
+  <div class="navbar">    
+    
+    <div class="burger">
+      <button onclick="toggle_visibility('menu')">
+        <i class="fa fa-bars" aria-hidden="true"></i> Menu
+      </button>
+    </div>
+    <div id="menu" class="menu hidden">
+      <ul>
+        <li><a href="/">여기는 블로그입니다.</a></li>
+        <li><a href="/categories">Categories</a></li>
+        <li><a href="/tags">Tags</a></li>
+        
+      </ul>
+      <input class="search" id="search-input" type="search" placeholder="Keyword" value="">
+    </div>
+  </div>
+  <div class="container">    
+
+<div class="post">
+  <div class="post-title">
+    <a href="https://SeungHyeokJeon.github.io/posts/buzzing/hugo-blog-%EA%B8%80-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/">
+      
+      <div class="post-meta">
+        <time>2022년 03월 13일</time>
+        <h1>Hugo Blog 글 작성하기</h1>
+      </div>
+    </a>
+  </div>
+  <div class="post-toc">
+    <span class="title">차례</span>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#파일-위치">파일 위치</a>
+      <ul>
+        <li><a href="#게시글">게시글</a></li>
+        <li><a href="#이미지-동영상-등-첨부파일">이미지, 동영상 등 첨부파일</a></li>
+      </ul>
+    </li>
+    <li><a href="#기본-정보-작성">기본 정보 작성</a></li>
+    <li><a href="#이미지-삽입-방법">이미지 삽입 방법</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+</nav>
+  </div>
+  <section class="post-content">
+    <blockquote>
+<p>글에 들어가기 앞서, 이 글은 윈도우 10, 11 기준으로 작성되었음을 알립니다.</p>
+</blockquote>
+<h2 id="파일-위치">파일 위치</h2>
+<h3 id="게시글">게시글</h3>
+<p>Hugo Blog의 게시글이 되는 markdown 파일은 <code>/blog/content/posts</code> 아래에 위치합니다.</p>
+<pre tabindex="0"><code>└── blog
+    ├── .git
+    └── blog
+        ├── archetypes
+        ├── content
+            └── posts
+                ├── buzzing
+                    └── Hugo Blog 글 작성하기.md
+                ...
+        ...
+        └── comfig.toml
+</code></pre><p>사람마다 게시글을 관리하는 방법을 제각각이지만, 저는 <code>posts</code>아래에 <code>category</code>폴더를 따로 만들어 카테고리별로 게시글을 관리하고 있습니다.</p>
+<h3 id="이미지-동영상-등-첨부파일">이미지, 동영상 등 첨부파일</h3>
+<p>Hugo Blog에서 이미지나 동영상 등 첨부파일이 렌더링 되는 위치는 <code>/blog/static</code> 아래에 위치합니다.</p>
+<pre tabindex="0"><code>└── blog
+    ├── .git
+    └── blog
+        ├── archetypes
+        ...
+        ├── static
+            └── buzzing
+                ├── 20220313_HugoBlog글작성하기
+                    └── image.jpeg
+                ...
+        ...
+        └── comfig.toml
+</code></pre><p>보통은 <code>static</code>아래에 <code>images</code>나 <code>videos</code> 같은 폴더로 분류하는게 정석이지만, 저는 <code>static</code> 아래에 <code>category</code>와 <code>게시글</code>로 분류하여 파일을 관리하고 있습니다.</p>
+<h2 id="기본-정보-작성">기본 정보 작성</h2>
+<p>글의 제목이나 작성날짜, 카테고리 등 글에 대한 기본 정보를 작성하는 부분입니다.</p>
+<pre tabindex="0"><code>---
+title: &#34;Hugo Blog 이미지 삽입하기&#34;
+date: 2022-03-13
+categories: [&#34;buzzing&#34;]
+tags: [&#34;project&#34;, &#34;blog&#34;, &#34;hugo&#34;, &#34;github&#34;]
+# cover: &#34;/images/buzzing/20220301_HugoBlog구축/thumbnail.png&#34;
+draft: false
+---
+</code></pre><p>글의 최상단에 위치하며 수정할 수 있는 값은 title, date, categories, tags, cover, draft가 있습니다.</p>
+<p>각 항목에 대해 조금씩 살펴보자면,</p>
+<ul>
+<li><strong>title → 글의 제목</strong>, 브라우저의 타이틀바와 블로그에서 보여지는 글의 제목입니다.</li>
+<li><strong>date → 글을 쓴 날짜</strong>, 기본적으로 날짜+시간을 보여주지만, 현재 저는 날짜만 출력되도록 사용하고 있습니다.</li>
+<li><strong>categories → 글의 카테고리</strong>, 여러 개를 지정하고 싶은 경우, 중괄호 안에 <code>,</code>로 구분하여 작성합니다.</li>
+<li><strong>tags → 글의 태그</strong>, categories와 마찬가지로 여러 개를 지정하고 싶은 경우, 중괄호 안에 <code>,</code>로 구분하여 작성합니다.</li>
+<li><strong>cover → 글의 썸네일 이미지</strong>, <strong>로컬 경로</strong>를 입력해줄 수 있고, <strong>URL</strong> 형태로도 지원합니다.</li>
+<li><strong>draft → 글을 보여줄지 결정하는 변수</strong>, draft를 true로 설정하게 되면 Hugo는 해당 글을 렌더링하지 않아 블로그에 출력되지 않습니다.</li>
+</ul>
+<h2 id="이미지-삽입-방법">이미지 삽입 방법</h2>
+<p>이미지를 삽입하기 위해서는 <code>static</code> 아래에 있는 경로와 함께 파일명을 적어주어야 합니다.</p>
+<pre tabindex="0"><code>&lt;!-- image 경로 /blog/static/buzzing/20220313_HugoBlog글작성하기/image.png --&gt;
+![image](/buzzing/20220313_HugoBlog글작성하기/github_02.png)
+</code></pre><p>이미지의 경로는 static까지의 경로는 적지 않고, static 아래의 경로부터 적어줍니다.</p>
+<p>이유는 Hugo Blog 렌더링을 진행하면</p>
+<p><img src="/buzzing/20220313_HugoBlog%EA%B8%80%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/github_02.png" alt="image"></p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+<p><a href="https://velog.io/@mellonggo/Github-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-Hugo">https://velog.io/@mellonggo/Github-페이지-블로그-만들기-with-Hugo</a></p>
+<p><a href="https://gurumee92.github.io/2020/08/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B5%AC%EC%B6%95%EA%B8%B0-1-hugo-github%EC%9C%BC%EB%A1%9C-%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/">https://gurumee92.github.io/2020/08/블로그-구축기-1-hugo-github으로-개인-블로그-만들기/</a></p>
+
+  </section>
+  <div class="share">    
+    
+  </div>
+  <div class="post-meta-code">
+    <div class="desc">
+      
+      
+      <a href="mailto:sdkazx2717@gmail.com">SeungHyeok Jeon</a>
+      
+      님이
+      <span class="highlight">2022년 03월 13일</span> 
+      에 작성한 글입니다.
+    </div>
+    <div class="desc">
+      
+      <div class="desc">
+        <span class="fixed-desc">_Categories</span>
+        
+        
+        <a href="https://SeungHyeokJeon.github.io//categories/buzzing">#buzzing</a>
+        
+      </div>
+      
+      <div class="desc">
+        <span class="fixed-desc">_Tags</span>
+        
+        
+        <a href="https://SeungHyeokJeon.github.io/tags/project">#project</a>
+        
+        <a href="https://SeungHyeokJeon.github.io/tags/blog">#blog</a>
+        
+        <a href="https://SeungHyeokJeon.github.io/tags/hugo">#hugo</a>
+        
+        <a href="https://SeungHyeokJeon.github.io/tags/github">#github</a>
+        
+        
+      </div>
+    </div>
+  </div>  
+  
+  <div class="post-comment">    
+        
+  </div>
+  
+  
+</div>
+
+<div class="go-top">
+  <a href="#" class="go-top-button">
+    <i class="fa fa-angle-double-up"></i>
+    <span>Top</span>
+  </a>
+</div>
+<footer class="footer">
+  COPYRIGHT (C) <a href="https://seunghyeokjeon.github.io/">SeungHyeok Jeon.</a> ALL RIGHTS RESERVED.
+</footer>
+</body>
+</html>
+
