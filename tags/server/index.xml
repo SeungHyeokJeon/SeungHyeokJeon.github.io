@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on 여기는 블로그입니다.</title>
+    <link>https://SeungHyeokJeon.github.io/tags/server/</link>
+    <description>Recent content in server on 여기는 블로그입니다.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    <managingEditor>sdkazx2717@gmail.com (SeungHyeok Jeon)</managingEditor>
+    <webMaster>sdkazx2717@gmail.com (SeungHyeok Jeon)</webMaster>
+    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://SeungHyeokJeon.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 20.04 NTP 시간 동기화</title>
+      <link>https://SeungHyeokJeon.github.io/posts/linux/ubuntu-20.04-ntp-%EC%8B%9C%EA%B0%84-%EB%8F%99%EA%B8%B0%ED%99%94/</link>
+      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+      <author>sdkazx2717@gmail.com (SeungHyeok Jeon)</author>
+      <guid>https://SeungHyeokJeon.github.io/posts/linux/ubuntu-20.04-ntp-%EC%8B%9C%EA%B0%84-%EB%8F%99%EA%B8%B0%ED%99%94/</guid>
+      <description>파일 백업용 서버를 운용하던 중, 파일 업로드 및 수정 시간이 엉뚱한 시간으로 나오는 것을 발견했고, Timezone 변경 및 NTP 동기화를 통해 정상적으로 시간이 출력되도록 하겠습니다.
+Timezone 변경 NTP를 통해 시간 대역을 맞추기 전, UTC가 기본으로 잡혀있는 timezone을 KST로 변경합니다.
+sudo timedatectl set-timezone Asia/Seoul NTP(Network Time Protocol) 설치 $ sudo apt-get install ntp 설정 변경 먼저 서버 설정 파일을 열어 ntp pool server를 변경해줍니다.
+$ sudo vi /etc/ntp.conf # /etc/ntp.conf, configuration for ntpd; see ntp.</description>
+    </item>
+    
+  </channel>
+</rss>
